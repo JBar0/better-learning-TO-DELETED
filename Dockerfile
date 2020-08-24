@@ -14,7 +14,7 @@ COPY ./src ./src
 
 # build for release
 # NOTE: my-project-* should be replaced with the proper prefix
-RUN mvn package && cp target/my-project-*.jar app.jar
+RUN mvn package && cp target/server-*.jar app.jar
 
 
 # smaller, final base image
